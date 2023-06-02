@@ -10,22 +10,30 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">NOS KAMBUCHAS</a>
+        <nav class="nav-link">
+            <a href="#">NOS KOMBUCHAS</a>
             <a href="#">NOS SERVICES</a>
-            <a href="#"><img src="media\Logo.png" alt=""> </a>
+            <a href="#"><img src="media\Logo.png" alt=""></a>
             <a href="#">CONTACTS</a>
             <a href="#">A PROPOS</a>
         </nav>
-        <div class="menu-burger"></div>
-        <div class="video-wrapper">
-            <video playsinline autoplay muted loop poster="">
-              <source src="media\video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+        <button type="submit" aria-label="toggle ccurtain navigation" class="nav-toggler">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+        <div class="menu-burger">
+            <a href="#">ACCUEIL</a>
+            <a href="#">NOS KOMBUCHAS</a>
+            <a href="#">NOS SERVICES</a>
+            <a href="#">CONTACTS</a>
+            <a href="#">A PROPOS</a>
+        </div>
+        <div class="video-header">
+            <video autoplay muted loop src="media/video.mp4">
             </video>
-            <div class="textVideo">
-              <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum et deserunt quasi velit, nemo in, beatae corrupti reiciendis asperiores quae accusamus. Amet quas at dolor vel quis atque tempora illum.</h1>
-            </div>
+            <h1>L'atelier à bulles est une entreprise qui a pour ambition d'impacter positivement le bien-être alimentaire des citoyens de la MEL. </h1>
+            <p>"Que ta nourriture soit ton médicament" disait Hippocrate.</p>
             </div>
     </header>
 
@@ -41,14 +49,12 @@
         <br>
         <div class="bot-content">
             <div class="block-ateliers">
-                <h2 class="titre-block"></h2>
-            </div>
-            <div class="block-services">
-                <h2 class="titre-block"></h2>
+                <h2 class="titre-block"> Nos atelier </h2>
             </div>
         </div>
     </main>
 
     <footer></footer>
+    <script src="/script.js"></script>
 </body>
 </html>
