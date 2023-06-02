@@ -183,21 +183,16 @@ header button.nav-toggler {
   filter: brightness(110%);
   position: absolute;
   z-index: -1;
-  /* filter: contrast(150%); */
 }
 
 /* fin de la vidéo  */
 
 /* debut du main */
-
-
-main {
+main.home-page{
   display: flex;
   flex-direction: column;
   margin: 0 10%;
 }
-
-
 .top-content {
   width: 100%;
   display: flex;
@@ -254,7 +249,6 @@ main {
   font-size: 3.5em;
   text-shadow: 2px 1px rgb(0, 0, 0);
   max-width: 50%;
-  
 }
 .block-large {
   width: 100%;
@@ -289,6 +283,43 @@ main {
 .block-large:hover::before{
   transform: scale(1.1);
 }
+/* ---- Fin de la home page ----*/
+
+
+/*---------- Debut de la page produits ------------*/
+.body-page{
+  background-image: url(/ola-project/media/Group\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main.produits-page{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%; 
+    justify-content: space-between;
+}
+main.produits-page .block-small{
+  box-shadow: none;
+}
+.kombucha-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/ola-project/media/imgkombucha.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fekir-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/ola-project/media/imgfekir.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*---------- Fin de la page produits ------------*/
 
 footer {
   background-color: black;
