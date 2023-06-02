@@ -31,7 +31,7 @@
 .nav-link {
   display: flex;
   flex-direction: row;
-  height: 10vh;
+  height: 12vh;
   justify-content: space-evenly;
   position: fixed;
   top: 0;
@@ -48,17 +48,18 @@
   font-weight: 700;
   color: black;
   transition: all 0.3s;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .nav-link a img {
-width: 80%;
+width: 85%;
 }
-
 .nav-link a:hover {
-  color: #aa0000;
+  color: var(--jaune);
+  text-shadow: 2px 1px rgb(0, 0, 0);
   transform: scale(1.1);
 }
-
 .nav-toggler {
   position: fixed;
   z-index: 10;
@@ -74,7 +75,6 @@ width: 80%;
   align-items: center;
   background-color: transparent;
 }
-
 .line {
   position: absolute;
   display: block;
@@ -83,15 +83,12 @@ width: 80%;
   background-color: rgb(0, 0, 0);
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
-
 .l1 {
   transform: translateY(-10px);
 }
-
 .l3 {
   transform: translateY(10px);
 }
-
 .nav-toggler.active .l1 {
   transform: translateY(0px) rotate(135deg);
   background-color: black;
@@ -110,6 +107,7 @@ width: 80%;
   display: none;
   flex-direction: column;
   position: fixed;
+  z-index: 9;
   background-color: #ffffff9e;
   backdrop-filter: blur(4px);
   width: 100vw;
@@ -211,7 +209,7 @@ main.home-page{
   position: relative;
   overflow: hidden;
   width: 45%;
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -243,23 +241,26 @@ main.home-page{
   background-position: center;
 }
 .titre-block{
-  color: white;
+  display: flex;
+  color: var(--jaune);
   font-family: var(--font-text1);
   text-transform: uppercase;
   font-size: 3.5em;
+  text-align: center;
+  justify-content: center;
   text-shadow: 2px 1px rgb(0, 0, 0);
-  max-width: 50%;
+  max-width: 60%;
 }
 .block-large {
   width: 100%;
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
   text-shadow: black;
-  color: #fff;
+  color: var(--jaune);
   font-family: var(--font-text1);
   text-transform: uppercase;
   font-size: 1.5em;
@@ -287,10 +288,10 @@ main.home-page{
 
 
 /*---------- Debut de la page produits ------------*/
-.body-page{
+.body-page {
   background-image: url(/ola-project/media/Group\ 6.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main.produits-page{
     display: flex;
