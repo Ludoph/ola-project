@@ -244,7 +244,7 @@ main.home-page{
   display: flex;
   color: var(--jaune);
   font-family: var(--font-text1);
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 3.5em;
   text-align: center;
   justify-content: center;
