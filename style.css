@@ -231,12 +231,12 @@ main.home-page{
   transform: scale(1.1);
 }
 .produits::before{
-  background-image: url(/ola-project/media/imgproduct.jpg);
+  background-image: url(/ola-project/media/photo-home-produit.jpg);
   background-size: cover;
   background-position: center;
 }
 .histoire::before{
-  background-image: url(/ola-project/media/ola-monhistoire.jpg);
+  background-image: url(/ola-project/media/photo-home-monhistoire.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -275,7 +275,7 @@ main.home-page{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(media/ola\ atelier.jpg);
+  background-image: url(media/photo-atelier1.jpg);
   background-size: cover;
   background-position: center;
   transition: transform 1s ease;
@@ -288,11 +288,6 @@ main.home-page{
 
 
 /*---------- Debut de la page produits ------------*/
-.body-page {
-  background-image: url(/ola-project/media/Group\ 6.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 main.produits-page{
     display: flex;
     flex-direction: row;
@@ -306,22 +301,152 @@ main.produits-page .block-small{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/ola-project/media/imgkombucha.jpeg);
+}
+.kombucha-card::before{
+  background-image: url(/ola-project/media/img-main-kombucha.jpeg);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 .fekir-card{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/ola-project/media/imgfekir.jpg);
+}
+.fekir-card::before{
+  background-image: url(/ola-project/media/img-main-fekir.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+.produits-list-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.nav-product{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.nav-product a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-text1);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: black;
+  transition: all 0.3s;
+}
+.nav-product a:hover{
+  background-color: var(--vert);
+  font-weight: bold;
+}
+.list-product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.list-product a {
+  margin: 20px;
+}
+.list-product a p{
+  font-family: var(--font-text1);
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--vert);
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 1px black;
+}
+.kombucha1{
+  background-image: url(/ola-project/media/kombucha-blue.jpg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.kombucha2{
+  background-image: url(/ola-project/media/kombucha-green.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.kombucha3{
+  background-image: url(/ola-project/media/kombucha-red.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.kombucha4{
+  background-image: url(/ola-project/media/kombucha-yellow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.fekir1{
+  background-image: url(/ola-project/media/fekir-blue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.fekir2{
+  background-image: url(/ola-project/media/img-main-fekir.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.fekir3{
+  background-image: url(/ola-project/media/fekir-red.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+}
+.fekir4{
+  background-image: url(/ola-project/media/fekir-yellow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
 }
 /*---------- Fin de la page produits ------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- Footer ----- */
 footer {
   background-color: black;
   display: flex;
