@@ -201,7 +201,20 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
-
+@media (max-width: 960px){
+  .video-header {
+    height: 50vh;
+  }
+  .video-header h1 {
+    font-size: 1.8em;
+  }
+  .video-header p {
+    font-size: 1.2em;
+  }
+  .video-header video {
+    height: 50vh;
+  }
+}
 /* fin de la vidéo  */
 
 /* debut du main */
@@ -329,6 +342,22 @@ main.home-page{
 }
 .block-large:hover::before{
   transform: scale(1.1);
+}
+@media (max-width: 960px){
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-small {
+    margin: 10% 0;
+    width: 100%;
+  }
+  main.produits-page{
+    display: flex;
+    flex-direction: column;
+}
 }
 /* ---- Fin de la home page ----*/
 
@@ -493,6 +522,22 @@ main.produits-page .block-small{
 .fekir4::before{
   background-color: var(--vert);
   opacity: 0.4;
+}
+@media (max-width: 960px){
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-small {
+    margin: 10% 0;
+    width: 100%;
+  }
+  main.produits-page{
+    display: flex;
+    flex-direction: column;
+}
 }
 /*---------- Fin de la page produits ------------*/
 
