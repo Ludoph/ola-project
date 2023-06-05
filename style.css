@@ -122,7 +122,20 @@ width: 85%;
 
 header button.nav-toggler {
   display: none;
-  background-color: #ffffff61;
+  transition: all 0.4s;
+}
+header button.nav-toggler:hover {
+  transform: scale(1.2);
+}
+header a.btn-home-page img{
+  display: none;
+  width: 20vw;
+  position: fixed;
+  z-index: 8;
+  transition: all 0.4s;
+}
+header a.btn-home-page img:hover{
+  transform: scale(1.2);
 }
 
 @media (max-width: 960px) {
@@ -133,7 +146,9 @@ header button.nav-toggler {
   .menu-burger {
     display: flex;
   }
-
+  header a.btn-home-page img{
+    display: flex;
+  }
   header button.nav-toggler {
     display: flex;
   }
@@ -165,11 +180,13 @@ header button.nav-toggler {
   text-align: center;
   font-family: var(--font-slogan);
   font-size: 3em;
+  color: #fff;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
 
 .video-header p {
   font-family: var(--font-slogan);
+  color: #fff;
   font-style: italic;
   font-size: 2em;
   margin: 40px;
@@ -215,6 +232,10 @@ main.home-page{
 .home-description .kombucha-description{
   width: 100%;
   box-shadow: 5px 5px 5px var(--shadow);
+  transition: all 0.4s;
+}
+.home-description .kombucha-description:hover{
+  transform: scale(1.2);
 }
 .top-content {
   width: 100%;
