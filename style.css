@@ -501,61 +501,65 @@ main.produits-page .block-small{
   font-family: var(--font-slogan);
   font-size: 1.5em;
 }
-.kombucha1{
+.kombucha1,
+.kombucha2,
+.kombucha3,
+.kombucha4{
+  box-shadow: none;
+}
+.kombucha1::before{
   background-image: url(/media/kombucha-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.kombucha2{
+.kombucha2::before{
   background-image: url(/media/kombucha-green.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.kombucha3{
+.kombucha3::before{
   background-image: url(/media/kombucha-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.kombucha4{
+.kombucha4::before{
   background-image: url(/media/kombucha-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.fekir1,
+.fekir2,
+.fekir3,
+.fekir4{
   box-shadow: none;
 }
-.fekir1{
+.fekir1::before{
   background-image: url(/media/fekir-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.fekir2{
+.fekir2::before{
   background-image: url(/media/img-main-fekir.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.fekir3{
+.fekir3::before{
   background-image: url(/media/fekir-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
-.fekir4{
+.fekir4::before{
   background-image: url(/media/fekir-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: none;
 }
 @media (max-width: 960px){
   .top-content {
