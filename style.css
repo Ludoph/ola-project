@@ -384,13 +384,13 @@ main.produits-page .block-small{
   background-size: contain;
   background-repeat: no-repeat; 
 }
-.fekir-card{
+.kefir-card{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fekir-card::before{
-  background-image: url(/media/img-main-fekir.jpg);
+.kefir-card::before{
+  background-image: url(/media/img-main-kefir.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;  
@@ -531,32 +531,32 @@ main.produits-page .block-small{
   background-repeat: no-repeat;
   background-size: contain;
 }
-.fekir1,
-.fekir2,
-.fekir3,
-.fekir4{
+.kefir1,
+.kefir2,
+.kefir3,
+.kefir4{
   box-shadow: none;
 }
-.fekir1::before{
-  background-image: url(/media/fekir-blue.jpg);
+.kefir1::before{
+  background-image: url(/media/kefir-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.fekir2::before{
-  background-image: url(/media/img-main-fekir.jpg);
+.kefir2::before{
+  background-image: url(/media/img-main-kefir.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.fekir3::before{
-  background-image: url(/media/fekir-red.jpg);
+.kefir3::before{
+  background-image: url(/media/kefir-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.fekir4::before{
-  background-image: url(/media/fekir-yellow.jpg);
+.kefir4::before{
+  background-image: url(/media/kefir-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
