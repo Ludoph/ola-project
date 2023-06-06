@@ -180,13 +180,13 @@ header a.btn-home-page img:hover{
   text-align: center;
   font-family: var(--font-slogan);
   font-size: 3em;
-  color: #fff;
+  color: #000000;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
 
 .video-header p {
   font-family: var(--font-slogan);
-  color: #fff;
+  color: #000000;
   font-style: italic;
   font-size: 2em;
   margin: 40px;
