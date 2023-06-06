@@ -275,6 +275,7 @@ main.home-page{
   text-align: center;
   align-items: center;
   box-shadow: 5px 5px 5px var(--shadow);
+  cursor: pointer;
 }
 .block-small::before{
   content: "";
@@ -430,10 +431,13 @@ main.produits-page .block-small{
   justify-content: center;
   width: 83%;
 }
-.list-product a {
+.list-product{
   margin: 20px;
 }
-.list-product a p{
+.list-product .block-small{
+  margin: 20px;
+}
+.list-product p.text-card{
   font-family: var(--font-text1);
   font-size: 4em;
   font-weight: bold;
@@ -443,85 +447,115 @@ main.produits-page .block-small{
   justify-content: center;
   text-shadow: 1px 2px 1px black;
 }
+.detail-kombucha1,
+.detail-kombucha2,
+.detail-kombucha3,
+.detail-kombucha4{
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  z-index: 5;
+  top: 20%;
+  width: 50%;
+  height: 60%;
+  padding: 40px;
+  background-color: #ffffffc3;
+  backdrop-filter: blur(5px);
+  object-fit: contain;
+  border: 2px solid var(--bleu);
+}
+/* .detail-kombucha1{
+  display: flex;
+} */
+.detail-kombucha1 img,
+.detail-kombucha2 img,
+.detail-kombucha3 img,
+.detail-kombucha4 img{
+  object-fit: contain;
+  object-position: center;
+  height: 90%;
+}
+.content-detail1,
+.content-detail2,
+.content-detail3,
+.content-detail4{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: right;
+}
+.content-detail1 .titre-produit,
+.content-detail2 .titre-produit,
+.content-detail3 .titre-produit,
+.content-detail4 .titre-produit{
+  font-family: var(--font-text1);
+  font-size: 1.7em;
+  margin: 40px 0;
+}
+.content-detail1 .text-detail-produit,
+.content-detail2 .text-detail-produit,
+.content-detail3 .text-detail-produit,
+.content-detail4 .text-detail-produit{
+  font-family: var(--font-slogan);
+  font-size: 1.5em;
+}
 .kombucha1{
   background-image: url(/media/kombucha-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.kombucha1::before{
-  background-color: var(--bleu);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .kombucha2{
   background-image: url(/media/kombucha-green.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.kombucha2::before{
-  background-color: var(--vert);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .kombucha3{
   background-image: url(/media/kombucha-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.kombucha3::before{
-  background-color: var(--rouge);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .kombucha4{
   background-image: url(/media/kombucha-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.kombucha4::before{
-  background-color: var(--jaune);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .fekir1{
   background-image: url(/media/fekir-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.fekir1::before{
-  background-color: var(--bleu);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .fekir2{
   background-image: url(/media/img-main-fekir.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.fekir2::before{
-  background-color: var(--jaune);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .fekir3{
   background-image: url(/media/fekir-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.fekir3::before{
-  background-color: var(--rouge);
-  opacity: 0.4;
+  box-shadow: none;
 }
 .fekir4{
   background-image: url(/media/fekir-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.fekir4::before{
-  background-color: var(--vert);
-  opacity: 0.4;
+  box-shadow: none;
 }
 @media (max-width: 960px){
   .top-content {
@@ -537,7 +571,7 @@ main.produits-page .block-small{
   main.produits-page{
     display: flex;
     flex-direction: column;
-}
+  }
 }
 /*---------- Fin de la page produits ------------*/
 
