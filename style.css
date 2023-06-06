@@ -407,7 +407,7 @@ main.produits-page .block-small{
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .nav-product a{
   display: flex;
