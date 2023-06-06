@@ -290,12 +290,12 @@ main.home-page{
   transform: scale(1.1);
 }
 .produits::before{
-  background-image: url(/ola-project/media/photo-home-produit.jpg);
+  background-image: url(/media/photo-home-produit.jpg);
   background-size: cover;
   background-position: center;
 }
 .histoire::before{
-  background-image: url(/ola-project/media/photo-home-monhistoire.jpg);
+  background-image: url(/media/photo-home-monhistoire.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -378,7 +378,7 @@ main.produits-page .block-small{
   align-items: center;
 }
 .kombucha-card::before{
-  background-image: url(/ola-project/media/img-main-kombucha.jpeg);
+  background-image: url(/media/img-main-kombucha.jpeg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; 
@@ -389,7 +389,7 @@ main.produits-page .block-small{
   align-items: center;
 }
 .fekir-card::before{
-  background-image: url(/ola-project/media/img-main-fekir.jpg);
+  background-image: url(/media/img-main-fekir.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;  
@@ -444,7 +444,7 @@ main.produits-page .block-small{
   text-shadow: 1px 2px 1px black;
 }
 .kombucha1{
-  background-image: url(/ola-project/media/kombucha-blue.jpg);
+  background-image: url(/media/kombucha-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -454,7 +454,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .kombucha2{
-  background-image: url(/ola-project/media/kombucha-green.jpg);
+  background-image: url(/media/kombucha-green.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -464,7 +464,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .kombucha3{
-  background-image: url(/ola-project/media/kombucha-red.jpg);
+  background-image: url(/media/kombucha-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -474,7 +474,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .kombucha4{
-  background-image: url(/ola-project/media/kombucha-yellow.jpg);
+  background-image: url(/media/kombucha-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -484,7 +484,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .fekir1{
-  background-image: url(/ola-project/media/fekir-blue.jpg);
+  background-image: url(/media/fekir-blue.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -494,7 +494,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .fekir2{
-  background-image: url(/ola-project/media/img-main-fekir.jpg);
+  background-image: url(/media/img-main-fekir.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -504,7 +504,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .fekir3{
-  background-image: url(/ola-project/media/fekir-red.jpg);
+  background-image: url(/media/fekir-red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -514,7 +514,7 @@ main.produits-page .block-small{
   opacity: 0.4;
 }
 .fekir4{
-  background-image: url(/ola-project/media/fekir-yellow.jpg);
+  background-image: url(/media/fekir-yellow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
