@@ -167,6 +167,7 @@ header a.btn-home-page img:hover{
 /* fin de nav */
 
 /* video du header  */
+
 .video-header {
   height: 80vh;
   display: flex;
@@ -201,20 +202,134 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
+
+
+.image-header {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-header h1 {
+  width: 50%;
+  text-align: center;
+  font-family: var(--font-slogan);
+  font-size: 3em;
+  color: #000000;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
+}
+
+.image-header p {
+  font-family: var(--font-slogan);
+  color: #000000;
+  font-style: italic;
+  font-size: 2em;
+  margin: 40px;
+}
+
+.image-header img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: saturate(150%);
+  filter: brightness(110%);
+  position: absolute;
+  z-index: -1;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.pro{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pro p{
+  margin-left: 2%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ text-align: center;
+
+}
+.pro img{
+  width: 30%;
+}
+
+.traiteur{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.traiteur p{
+  margin-left: 2%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ text-align: center;
+}
+
+.traiteur img{
+  width: 30%;
+  
+}
+
+.atelier{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.atelier p{
+  margin-left: 2%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ text-align: center;
+}
+
+.atelier img{
+  width: 30%;
+}
+
 @media (max-width: 960px){
-  .video-header {
+  .image-header {
     height: 50vh;
   }
-  .video-header h1 {
+  .image-header h1 {
     font-size: 1.8em;
   }
-  .video-header p {
+  .image-header p {
     font-size: 1.2em;
   }
-  .video-header video {
+  .image-header img {
     height: 50vh;
   }
 }
+
+
+
+
+
 /* fin de la vidéo  */
 
 /* debut du main */
