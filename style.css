@@ -168,6 +168,42 @@ header a.btn-home-page img:hover{
 
 /* video du header  */
 
+.video-header {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-header h1 {
+  width: 50%;
+  text-align: center;
+  font-family: var(--font-slogan);
+  font-size: 3em;
+  color: #000000;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
+}
+
+.video-header p {
+  font-family: var(--font-slogan);
+  color: #000000;
+  font-style: italic;
+  font-size: 2em;
+  margin: 40px;
+}
+
+.video-header video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: saturate(150%);
+  filter: brightness(110%);
+  position: absolute;
+  z-index: -1;
+}
+
+
 .image-header {
   height: 80vh;
   display: flex;
