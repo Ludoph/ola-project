@@ -2,10 +2,8 @@
 const hamburgerButton = document.querySelector('.nav-toggler');
 //selection de la nav du burger menu
 const navigation = document.querySelector('.menu-burger');
-
 //ajout d'un ecouteur avec un click sur le menu burger
 hamburgerButton.addEventListener('click', toggleNav)
-
 //action sur le active
 function toggleNav(){
     hamburgerButton.classList.toggle('active')
@@ -26,6 +24,7 @@ document.addEventListener('click', function(event) {
     }
 });
 // -------------------------------
+// -------------------------------
 const btnKombucha2 = document.querySelector('.kombucha2');
 const infoKombucha2 = document.querySelector('.detail-kombucha2');
 btnKombucha2.addEventListener('click', function() {
@@ -37,6 +36,7 @@ document.addEventListener('click', function(event) {
         infoKombucha2.style.display = 'none';
     }
 });
+// --------------------------------
 // --------------------------------
 
 const btnKombucha3 = document.querySelector('.kombucha3');
@@ -50,8 +50,9 @@ document.addEventListener('click', function(event) {
         infoKombucha3.style.display = 'none';
     }
 });
-
 //----------------------------------
+//----------------------------------
+
 const btnKombucha4 = document.querySelector('.kombucha4');
 const infoKombucha4 = document.querySelector('.detail-kombucha4');
 btnKombucha4.addEventListener('click', function() {
