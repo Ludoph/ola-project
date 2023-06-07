@@ -53,3 +53,5 @@ btnKombucha4.addEventListener('click', () =>{
         infoKombucha4.style.display = 'flex';
     }
 });
+
+

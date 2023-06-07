@@ -205,11 +205,18 @@ header a.btn-home-page img:hover{
 
 
 .image-header {
-  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blured {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
+  padding: 50px;
 }
 
 .image-header h1 {
