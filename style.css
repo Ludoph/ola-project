@@ -368,7 +368,7 @@ main.produits-page{
     display: flex;
     flex-direction: row;
     margin: 5% 10%; 
-    justify-content: space-between;
+    justify-content: center;
 }
 main.produits-page .block-small{
   box-shadow: none;
@@ -453,18 +453,19 @@ main.produits-page .block-small{
 .detail-kombucha4{
   display: none;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   align-items: center;
   z-index: 5;
-  top: 20%;
-  width: 50%;
-  height: 60%;
+  top: 5%;
+  width: 70%;
+  height: 90%;
   padding: 40px;
-  background-color: #ffffffc3;
+  background-color: #ffffffe0;
   backdrop-filter: blur(5px);
   object-fit: contain;
   border: 2px solid var(--bleu);
+  transition: display 0.4s ease-in-out;
 }
 /* .detail-kombucha1{
   display: flex;
@@ -483,23 +484,23 @@ main.produits-page .block-small{
 .content-detail4{
   display: flex;
   flex-direction: column;
-  width: 40%;
-  text-align: right;
+  width: 45%;
+  text-align: left;
 }
 .content-detail1 .titre-produit,
 .content-detail2 .titre-produit,
 .content-detail3 .titre-produit,
 .content-detail4 .titre-produit{
   font-family: var(--font-text1);
-  font-size: 1.7em;
-  margin: 40px 0;
+  font-size: 2em;
+  margin: 60px 0;
 }
 .content-detail1 .text-detail-produit,
 .content-detail2 .text-detail-produit,
 .content-detail3 .text-detail-produit,
 .content-detail4 .text-detail-produit{
   font-family: var(--font-slogan);
-  font-size: 1.5em;
+  font-size: clamp(1em, 2.3vw, 3em);
 }
 .kombucha1,
 .kombucha2,
