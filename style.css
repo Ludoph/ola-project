@@ -671,7 +671,7 @@ main.produits-page .block-small{
 .content-detail3 .text-detail-produit,
 .content-detail4 .text-detail-produit{
   font-family: var(--font-text2);
-  font-size: clamp(1em, 2.3vw, 1.7em);
+  font-size: clamp(1em, 2.3vw, 1.6em);
   padding: 0 50px;
   
 }
