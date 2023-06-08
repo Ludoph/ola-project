@@ -539,7 +539,7 @@ main.produits-page .block-small{
   align-items: center;
 }
 .kombucha-card::before{
-  background-image: url(/media/img-main-kombucha.jpeg);
+  background-image: url(/media/Kombucha\ white.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; 
@@ -550,10 +550,10 @@ main.produits-page .block-small{
   align-items: center;
 }
 .kefir-card::before{
-  background-image: url(/media/img-main-kefir.jpg);
+  background-image: url(/media/kefir-white.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; 
 }
 
 .produits-list-page{
@@ -601,7 +601,7 @@ main.produits-page .block-small{
   font-family: var(--font-text1);
   font-size: 4em;
   font-weight: bold;
-  color: var(--jaune);
+  color: white;
   width: 0%;
   display: flex;
   justify-content: center;
@@ -637,6 +637,7 @@ main.produits-page .block-small{
   object-fit: contain;
   object-position: center;
   height: 90%;
+  max-width: 40%;
 }
 .content-detail1,
 .content-detail2,
@@ -644,7 +645,7 @@ main.produits-page .block-small{
 .content-detail4{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 50%;
   text-align: left;
 }
 .content-detail1 .titre-produit,
@@ -652,15 +653,17 @@ main.produits-page .block-small{
 .content-detail3 .titre-produit,
 .content-detail4 .titre-produit{
   font-family: var(--font-text1);
-  font-size: 2em;
-  margin: 60px 0;
+  font-size: 1.7em;
+  margin: 30px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .content-detail1 .titre-produit img,
-.content-detail1 .titre-produit img{
-  width: 12%;
+.content-detail2 .titre-produit img,
+.content-detail3 .titre-produit img,
+.content-detail4 .titre-produit img{
+  width: 20%;
   margin-right: 20px;
 }
 .content-detail1 .text-detail-produit,
@@ -668,7 +671,8 @@ main.produits-page .block-small{
 .content-detail3 .text-detail-produit,
 .content-detail4 .text-detail-produit{
   font-family: var(--font-text2);
-  font-size: clamp(1em, 2.3vw, 2em);
+  font-size: clamp(1em, 2.3vw, 1.7em);
+  padding: 0 50px;
   
 }
 .kombucha1,
@@ -678,25 +682,25 @@ main.produits-page .block-small{
   box-shadow: none;
 }
 .kombucha1::before{
-  background-image: url(/media/kombucha-blue.jpg);
+  background-image: url(/media/kombucha-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kombucha2::before{
-  background-image: url(/media/kombucha-green.jpg);
+  background-image: url(/media/kombucha-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kombucha3::before{
-  background-image: url(/media/kombucha-red.jpg);
+  background-image: url(/media/kombucha-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kombucha4::before{
-  background-image: url(/media/kombucha-yellow.jpg);
+  background-image: url(/media/kombucha-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -708,25 +712,25 @@ main.produits-page .block-small{
   box-shadow: none;
 }
 .kefir1::before{
-  background-image: url(/media/kefir-blue.jpg);
+  background-image: url(/media/kefir-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kefir2::before{
-  background-image: url(/media/img-main-kefir.jpg);
+  background-image: url(/media/kefir-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kefir3::before{
-  background-image: url(/media/kefir-red.jpg);
+  background-image: url(/media/kefir-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .kefir4::before{
-  background-image: url(/media/kefir-yellow.jpg);
+  background-image: url(/media/kefir-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
