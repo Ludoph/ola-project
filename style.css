@@ -325,6 +325,7 @@ header a.btn-home-page img:hover{
 
 .atelier img{
   width: 30%;
+  
 }
 
 .text-presentation{
@@ -335,6 +336,15 @@ header a.btn-home-page img:hover{
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
+}
+
+.Title-Service H1{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-style: var(--font-text1);
 }
 
 @media (max-width: 960px){
