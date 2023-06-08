@@ -203,13 +203,14 @@ header a.btn-home-page img:hover{
   z-index: -1;
 }
 
+/* **********************************************************************Service CSS ********************************************************************************************************************* */
 
-.image-header {
+.image-header{
   display: flex;
   flex-direction: column;
 }
 
-.blured {
+.blured{
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -218,7 +219,7 @@ header a.btn-home-page img:hover{
   backdrop-filter: blur(4px);
 }
 
-.image-header h1 {
+.image-header h1{
   width: 50%;
   text-align: center;
   font-family: var(--font-slogan);
@@ -227,7 +228,7 @@ header a.btn-home-page img:hover{
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
 
-.image-header p {
+.image-header p{
   font-family: var(--font-slogan);
   color: #000000;
   font-style: italic;
@@ -235,7 +236,7 @@ header a.btn-home-page img:hover{
   margin: 40px;
 }
 
-.image-header img {
+.image-header img{
   width: 100%;
   height: 80vh;
   object-fit: cover;
@@ -245,21 +246,23 @@ header a.btn-home-page img:hover{
   z-index: -1;
 }
 
-.service{
+.proTraiteur{
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: space-between;
   margin-top: 2%;
   width: 100%;
 }
 
 .pro{
+  width: 40%;
   margin-top: 3%;
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
+  padding: 1%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .pro p{
@@ -281,15 +284,18 @@ header a.btn-home-page img:hover{
 }
 
 .pro img{
-  width: 30%;
+  width: 100%;
 }
 
 .traiteur{
+  width: 40%;
+  margin-top: 3%;
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
+  padding: 1%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .traiteur p{
@@ -302,16 +308,19 @@ header a.btn-home-page img:hover{
 }
 
 .traiteur img{
-  width: 30%;
-  
+  width: 100%;
 }
 
 .atelier{
-  margin-left: 2%;
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 5%;
   margin-bottom: 2%;
-  margin-right: 2%;
+  margin-right: 5%;
+  padding: 1%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .atelier p{
@@ -324,7 +333,8 @@ header a.btn-home-page img:hover{
 }
 
 .atelier img{
-  width: 30%;
+  width: 100%;
+  height: 50vh;
   
 }
 
@@ -341,7 +351,7 @@ header a.btn-home-page img:hover{
 .Title-Service H1{
   margin-top: 2%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   font-style: var(--font-text1);
@@ -361,6 +371,8 @@ header a.btn-home-page img:hover{
     height: 50vh;
   }
 }
+
+/* ********************************************************************** Fin Service CSS ********************************************************************************************************************* */
 
 
 
