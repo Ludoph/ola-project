@@ -182,7 +182,6 @@ header a.btn-home-page img:hover{
   align-items: center;
   backdrop-filter: blur(5px);
   animation: textToImageFade 4s infinite;
-  /* animation: textToImageFade 7s infinite; */
 }
 @keyframes textToImageFade {
   0%, 100% {
@@ -197,30 +196,6 @@ header a.btn-home-page img:hover{
     visibility: visible;
   }
 }
-
-/* @keyframes textToImageFade{
-  0%, 100% {
-    content: ".titre-video";
-    opacity: 1;
-    visibility: visible;
-  }
-  45% {
-    content: url(/media/logo-atelierbulle1.png);
-    width: 30%;
-    opacity: 1;
-    visibility: visible;
-  }
-  50% {
-    content: "";
-    opacity: 0;
-    visibility: hidden;
-  }
-  55% {
-    content: "";
-    opacity: 0;
-    visibility: hidden;
-  }
-} */
 .video-header h1 {
   width: 50%;
   text-align: center;
@@ -229,7 +204,6 @@ header a.btn-home-page img:hover{
   color: #000000;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
-
 .video-header p {
   font-family: var(--font-slogan);
   color: #000000;
@@ -237,7 +211,6 @@ header a.btn-home-page img:hover{
   font-size: 2em;
   margin: 40px;
 }
-
 .video-header video {
   width: 100%;
   height: 80vh;
@@ -247,8 +220,6 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
-
-
 .image-header {
   height: 80vh;
   display: flex;
@@ -256,7 +227,10 @@ header a.btn-home-page img:hover{
   justify-content: center;
   align-items: center;
 }
-
+.image-header h1.titre-mon-histoire{
+  color: #fff;
+  font-size: clamp(3em, 1.3vw, 6em);
+}
 .image-header h1 {
   width: 50%;
   text-align: center;
@@ -265,7 +239,6 @@ header a.btn-home-page img:hover{
   color: #000000;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
-
 .image-header p {
   font-family: var(--font-slogan);
   color: #000000;
@@ -273,7 +246,6 @@ header a.btn-home-page img:hover{
   font-size: 2em;
   margin: 40px;
 }
-
 .image-header img {
   width: 100%;
   height: 80vh;
@@ -283,7 +255,6 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
-
 .service{
   display: flex;
   flex-direction: column;
