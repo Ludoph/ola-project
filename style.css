@@ -220,18 +220,37 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
+<<<<<<< HEAD
 .image-header {
+=======
+
+/* **********************************************************************Service CSS ********************************************************************************************************************* */
+
+.image-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.blured{
+>>>>>>> yassine
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 }
 .image-header h1.titre-mon-histoire{
   color: #fff;
   font-size: clamp(3em, 1.3vw, 6em);
 }
 .image-header h1 {
+=======
+  backdrop-filter: blur(4px);
+}
+
+.image-header h1{
+>>>>>>> yassine
   width: 50%;
   text-align: center;
   font-family: var(--font-slogan);
@@ -239,14 +258,24 @@ header a.btn-home-page img:hover{
   color: #000000;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
 }
+<<<<<<< HEAD
 .image-header p {
+=======
+
+.image-header p{
+>>>>>>> yassine
   font-family: var(--font-slogan);
   color: #000000;
   font-style: italic;
   font-size: 2em;
   margin: 40px;
 }
+<<<<<<< HEAD
 .image-header img {
+=======
+
+.image-header img{
+>>>>>>> yassine
   width: 100%;
   height: 80vh;
   object-fit: cover;
@@ -255,20 +284,38 @@ header a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
+<<<<<<< HEAD
 .service{
   display: flex;
   flex-direction: column;
+=======
+
+.proTraiteur{
+  display: flex;
+  flex-direction:row;
+>>>>>>> yassine
   justify-content: space-between;
   margin-top: 2%;
   width: 100%;
 }
 
 .pro{
+<<<<<<< HEAD
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
   display: flex;
   flex-direction: row;
+=======
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+>>>>>>> yassine
 }
 
 .pro p{
@@ -278,6 +325,7 @@ header a.btn-home-page img:hover{
  justify-content: center;
  width: 100%;
  text-align: center;
+<<<<<<< HEAD
 
 }
 .pro img{
@@ -290,6 +338,32 @@ header a.btn-home-page img:hover{
   margin-right: 2%;
   display: flex;
   flex-direction: row-reverse;
+=======
+}
+
+.pro h1{
+  margin-left: 2%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ text-align: center;
+}
+
+.pro img{
+  width: 100%;
+}
+
+.traiteur{
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+>>>>>>> yassine
 }
 
 .traiteur p{
@@ -302,6 +376,7 @@ header a.btn-home-page img:hover{
 }
 
 .traiteur img{
+<<<<<<< HEAD
   width: 30%;
   
 }
@@ -312,6 +387,21 @@ header a.btn-home-page img:hover{
   margin-right: 2%;
   display: flex;
   flex-direction: row;
+=======
+  width: 100%;
+}
+
+.atelier{
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+>>>>>>> yassine
 }
 
 .atelier p{
@@ -324,7 +414,32 @@ header a.btn-home-page img:hover{
 }
 
 .atelier img{
+<<<<<<< HEAD
   width: 30%;
+=======
+  width: 100%;
+  height: 50vh;
+  
+}
+
+.text-presentation{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.Title-Service H1{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-style: var(--font-text1);
+>>>>>>> yassine
 }
 
 @media (max-width: 960px){
@@ -342,6 +457,11 @@ header a.btn-home-page img:hover{
   }
 }
 
+<<<<<<< HEAD
+=======
+/* ********************************************************************** Fin Service CSS ********************************************************************************************************************* */
+
+>>>>>>> yassine
 
 
 
