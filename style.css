@@ -175,7 +175,52 @@ header a.btn-home-page img:hover{
   justify-content: center;
   align-items: center;
 }
+.video-header .titre-video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  animation: textToImageFade 4s infinite;
+  /* animation: textToImageFade 7s infinite; */
+}
+@keyframes textToImageFade {
+  0%, 100% {
+    content: ".titre-video";
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    content: url(/media/logo-atelierbulle1.png);
+    width: 30%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
+/* @keyframes textToImageFade{
+  0%, 100% {
+    content: ".titre-video";
+    opacity: 1;
+    visibility: visible;
+  }
+  45% {
+    content: url(/media/logo-atelierbulle1.png);
+    width: 30%;
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+  }
+  55% {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+  }
+} */
 .video-header h1 {
   width: 50%;
   text-align: center;
@@ -599,7 +644,7 @@ main.produits-page .block-small{
 .content-detail4{
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   text-align: left;
 }
 .content-detail1 .titre-produit,
@@ -609,13 +654,22 @@ main.produits-page .block-small{
   font-family: var(--font-text1);
   font-size: 2em;
   margin: 60px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content-detail1 .titre-produit img,
+.content-detail1 .titre-produit img{
+  width: 12%;
+  margin-right: 20px;
 }
 .content-detail1 .text-detail-produit,
 .content-detail2 .text-detail-produit,
 .content-detail3 .text-detail-produit,
 .content-detail4 .text-detail-produit{
-  font-family: var(--font-slogan);
-  font-size: clamp(1em, 2.3vw, 3em);
+  font-family: var(--font-text2);
+  font-size: clamp(1em, 2.3vw, 2em);
+  
 }
 .kombucha1,
 .kombucha2,
