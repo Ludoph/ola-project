@@ -10,8 +10,8 @@ function toggleNav(){
     navigation.classList.toggle('active')
 }
 
-
-
+//----------------------------------
+//----------------------------------
 const btnKombucha1 = document.querySelector('.kombucha1');
 const infoKombucha1 = document.querySelector('.detail-kombucha1');
 btnKombucha1.addEventListener('click', function() {
@@ -23,7 +23,6 @@ document.addEventListener('click', function(event) {
         infoKombucha1.style.display = 'none';
     }
 });
-// -------------------------------
 // -------------------------------
 const btnKombucha2 = document.querySelector('.kombucha2');
 const infoKombucha2 = document.querySelector('.detail-kombucha2');
@@ -37,8 +36,6 @@ document.addEventListener('click', function(event) {
     }
 });
 // --------------------------------
-// --------------------------------
-
 const btnKombucha3 = document.querySelector('.kombucha3');
 const infoKombucha3 = document.querySelector('.detail-kombucha3');
 btnKombucha3.addEventListener('click', function() {
@@ -51,8 +48,6 @@ document.addEventListener('click', function(event) {
     }
 });
 //----------------------------------
-//----------------------------------
-
 const btnKombucha4 = document.querySelector('.kombucha4');
 const infoKombucha4 = document.querySelector('.detail-kombucha4');
 btnKombucha4.addEventListener('click', function() {
@@ -66,20 +61,18 @@ document.addEventListener('click', function(event) {
 });
 //----------------------------------
 //----------------------------------
-
 const btnPro = document.querySelector('.pro');
 const infoPro = document.querySelector('.detail-pro');
 btnPro.addEventListener('click', function() {
-    infoPro.style.display = 'flex';
+  infoPro.style.display = 'flex';
 });
 document.addEventListener('click', function(event) {
-    let elementClick = event.target;
-    if (elementClick != btnPro && !infoPro.contains(elementClick)){
-        infoPro.style.display = 'none';
-    }
+  let elementClick = event.target;
+  if (elementClick != btnPro && !infoPro.contains(elementClick)) {
+    infoPro.style.display = 'none';
+  }
 });
-
-
+//----------------------------------
 const btnTraieur = document.getElementById('traiteur');
 const infoTraiteur = document.getElementById('detail-traiteur');
 btnTraieur.addEventListener('click', function() {
@@ -91,8 +84,7 @@ document.addEventListener('click', function(event) {
         infoTraiteur.style.display = 'none';
     }
 });
-
-
+//----------------------------------
 const btnAteliers = document.getElementById('ateliers');
 const infoAteliers = document.getElementById('detail-ateliers');
 btnAteliers.addEventListener('click', function() {
