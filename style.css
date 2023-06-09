@@ -219,7 +219,7 @@ a.btn-home-page img:hover {
 .video-header p{
   font-family: var(--font-slogan);
   color: var(--jaune);
-  font-size: 1.7em;
+  font-size: 2em;
   margin: 20px;
   text-shadow: 2px 1px rgb(0, 0, 0);
 }
@@ -247,10 +247,11 @@ a.btn-home-page img:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 .titre-header h1 {
-  width: 50%;
+  width: 100%;
   text-align: center;
   font-family: var(--font-text1);
   font-size: 3em;
@@ -259,24 +260,21 @@ a.btn-home-page img:hover {
   text-shadow: 2px 1px rgb(0, 0, 0);
   text-align: center;
 }
-.image-header h1 {
-  width: 50%;
-  text-align: center;
+.titre-header p{
   font-family: var(--font-slogan);
-  font-size: 3em;
-  color: #000000;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
-
+  color: var(--jaune);
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 20px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
 }
 
-.image-header p {
+.titre-header p {
   font-family: var(--font-slogan);
-  color: #000000;
-  font-style: italic;
+  color: var(--jaune);
   font-size: 2em;
   margin: 40px;
 }
-
 .image-header img {
   width: 100%;
   height: 80vh;
@@ -286,7 +284,6 @@ a.btn-home-page img:hover {
   position: absolute;
   z-index: -1;
 }
-
 .bg-contact-header {
   background-color: #000000;
   height: 80vh;
@@ -327,12 +324,11 @@ a.btn-home-page img:hover {
 /* ------------- FIN DU HEADER -------------- */
 
 /* ------------- DEBUT MAIN ------------ */
-main.home-page {
+main {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
 }
-
 .home-description {
   display: flex;
   justify-content: center;
@@ -423,6 +419,16 @@ main.home-page {
   background-size: cover;
   background-position: center;
 }
+.pro::before {
+  background-image: url(/media/service-pro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.traiteur::before {
+  background-image: url(/media/service-traiteur.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 .titre-block {
   display: flex;
@@ -454,7 +460,21 @@ main.home-page {
   overflow: hidden;
 }
 
-.block-large::before {
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(media/photo-service-header.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+  z-index: -1;
+  cursor: pointer;
+}
+.ateliers::before {
   content: "";
   position: absolute;
   top: 0;
@@ -466,12 +486,11 @@ main.home-page {
   background-position: center;
   transition: transform 1s ease;
   z-index: -1;
+  cursor: pointer;
 }
-
 .block-large:hover::before {
   transform: scale(1.1);
 }
-
 @media (max-width: 960px) {
   .top-content {
     display: flex;
@@ -594,7 +613,10 @@ main.produits-page .block-small {
 .detail-kombucha1,
 .detail-kombucha2,
 .detail-kombucha3,
-.detail-kombucha4 {
+.detail-kombucha4,
+.detail-pro,
+.detail-traiteur,
+.detail-ateliers {
   display: none;
   flex-direction: row;
   justify-content: space-around;
@@ -609,17 +631,19 @@ main.produits-page .block-small {
   backdrop-filter: blur(5px);
   object-fit: contain;
   border: 2px solid var(--bleu);
-  transition: display 0.4s ease-in-out;
 }
-
-/* .detail-kombucha1{
+/* .detail-traiteur{
   display: flex;
 } */
+
 .detail-kombucha1 img,
 .detail-kombucha2 img,
 .detail-kombucha3 img,
-.detail-kombucha4 img {
-  object-fit: contain;
+.detail-kombucha4 img,
+.detail-pro img,
+.detail-traiteur img,
+.detail-ateliers img {
+  object-fit: cover;
   object-position: center;
   height: 90%;
   max-width: 40%;

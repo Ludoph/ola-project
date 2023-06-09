@@ -64,5 +64,43 @@ document.addEventListener('click', function(event) {
         infoKombucha4.style.display = 'none';
     }
 });
+//----------------------------------
+//----------------------------------
+
+const btnPro = document.querySelector('.pro');
+const infoPro = document.querySelector('.detail-pro');
+btnPro.addEventListener('click', function() {
+    infoPro.style.display = 'flex';
+});
+document.addEventListener('click', function(event) {
+    let elementClick = event.target;
+    if (elementClick != btnPro && !infoPro.contains(elementClick)){
+        infoPro.style.display = 'none';
+    }
+});
 
 
+const btnTraieur = document.getElementById('traiteur');
+const infoTraiteur = document.getElementById('detail-traiteur');
+btnTraieur.addEventListener('click', function() {
+    infoTraiteur.style.display = 'flex';
+});
+document.addEventListener('click', function(event) {
+    let elementClick = event.target;
+    if (elementClick != btnTraieur && !infoTraiteur.contains(elementClick)){
+        infoTraiteur.style.display = 'none';
+    }
+});
+
+
+const btnAteliers = document.getElementById('ateliers');
+const infoAteliers = document.getElementById('detail-ateliers');
+btnAteliers.addEventListener('click', function() {
+    infoAteliers.style.display = 'flex';
+});
+document.addEventListener('click', function(event) {
+    let elementClick = event.target;
+    if (elementClick != btnAteliers && !infoAteliers.contains(elementClick)){
+        infoAteliers.style.display = 'none';
+    }
+});
