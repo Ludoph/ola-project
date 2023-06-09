@@ -23,19 +23,22 @@
   list-style: none;
   text-decoration: none;
 }
-/* --------------- START HEADER ----------------  */
-/* -START NAVBAR- */ 
+
+/* ------------- DEBUT DU HEADER ------------ */
+/* DEBUT NAVBAR */
 .nav-link {
   display: flex;
   flex-direction: row;
-  height: 12vh;
+  height: 13vh;
+  width: 100%;
   justify-content: space-evenly;
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #ffffffa5;
+  background-color: #ffffff69;
   backdrop-filter: blur(5px);
 }
+
 .nav-link a {
   display: flex;
   width: 10%;
@@ -43,19 +46,22 @@
   align-items: center;
   font-family: var(--font-text1);
   font-weight: 700;
-  color: black;
-  transition: all 0.4s;
   text-align: center;
   text-transform: uppercase;
+  color: black;
+  transition: all 0.4s;
 }
+
 .nav-link a img {
   width: 85%;
 }
+
 .nav-link a:hover {
   color: var(--jaune);
   text-shadow: 2px 1px rgb(0, 0, 0);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
+
 .nav-toggler {
   position: fixed;
   z-index: 10;
@@ -71,6 +77,7 @@
   align-items: center;
   background-color: transparent;
 }
+
 .line {
   position: absolute;
   display: block;
@@ -79,23 +86,29 @@
   background-color: rgb(255, 255, 255);
   transition: transform 0.4s ease-out, opacity 0.1s ease-out;
 }
+
 .l1 {
   transform: translateY(-10px);
 }
+
 .l3 {
   transform: translateY(10px);
 }
+
 .nav-toggler.active .l1 {
   transform: translateY(0px) rotate(135deg);
   background-color: black;
 }
+
 .nav-toggler.active .l2 {
   opacity: 0;
 }
+
 .nav-toggler.active .l3 {
   transform: translateY(0px) rotate(-135deg);
   background-color: black;
 }
+
 .menu-burger {
   display: none;
   flex-direction: column;
@@ -111,29 +124,37 @@
   transform: translateX(100%);
   transition: transform 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
+
 button.nav-toggler {
   display: none;
   transition: all 0.4s;
 }
+
 button.nav-toggler:hover {
   transform: scale(1.2);
 }
-a.btn-home-page img{
+
+a.btn-home-page img {
   display: none;
   width: 20vw;
   position: fixed;
   z-index: 8;
   transition: all 0.4s;
 }
-a.btn-home-page img:hover{
+
+a.btn-home-page img:hover {
   transform: scale(1.2);
 }
+
 .menu-burger.active {
   transform: translateX(0);
 }
+
 .menu-burger a {
   font-family: var(--font-text1);
+  text-transform: uppercase;
   font-size: 2em;
+  font-weight: bold;
   color: black;
 }
 
@@ -141,19 +162,23 @@ a.btn-home-page img:hover{
   .nav-link {
     display: none;
   }
+
   .menu-burger {
     display: flex;
   }
-  a.btn-home-page img{
+
+  a.btn-home-page img {
     display: flex;
   }
+
   button.nav-toggler {
     display: flex;
   }
 }
-/* -END NAVBAR- */
 
-/* START MEDIA HEADER  */
+/* FIN NAVBAR */
+
+/* DEBUT VIDEO HEADER */
 .video-header {
   height: 80vh;
   display: flex;
@@ -161,48 +186,53 @@ a.btn-home-page img:hover{
   justify-content: center;
   align-items: center;
 }
-.video-header .titre-video{
+
+.video-header .titre-video {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
-  animation: textToImageFade 4s infinite;
+  animation: textToImageFade 10s infinite;
+  transition: content 1s ease, width 1s ease;
 }
 @keyframes textToImageFade {
-  0%, 100% {
+  0%,
+  100% {
     content: ".titre-video";
-    opacity: 0;
-    visibility: hidden;
   }
   50% {
     content: url(/media/logo-atelierbulle1.png);
-    width: 30%;
-    opacity: 1;
-    visibility: visible;
+    width: 20%;
   }
 }
 .video-header h1 {
   width: 50%;
   text-align: center;
-  font-family: var(--font-slogan);
+  font-family: var(--font-text1);
   font-size: 3em;
-  color: #000000;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
+  font-weight: bold;
+  color: var(--bleu);
+  text-shadow: 2px 1px rgb(0, 0, 0);
 }
-.video-header p {
+
+.video-header p{
   font-family: var(--font-slogan);
-  color: #000000;
-  font-style: italic;
+  color: var(--jaune);
+  font-size: 1.7em;
+  margin: 20px;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+}
+.video-header p i{
   font-size: 2em;
-  margin: 40px;
+  opacity: 0.7;
 }
 .video-header video {
   width: 100%;
   height: 80vh;
   object-fit: cover;
   filter: saturate(150%);
-  filter: brightness(110%);
+  filter: brightness(120%);
   position: absolute;
   z-index: -1;
 }
@@ -213,9 +243,21 @@ a.btn-home-page img:hover{
   justify-content: center;
   align-items: center;
 }
-.image-header h1.titre-mon-histoire{
-  color: #fff;
-  font-size: clamp(3em, 1.3vw, 6em);
+.titre-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.titre-header h1 {
+  width: 50%;
+  text-align: center;
+  font-family: var(--font-text1);
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--bleu);
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  text-align: center;
 }
 .image-header h1 {
   width: 50%;
@@ -224,7 +266,9 @@ a.btn-home-page img:hover{
   font-size: 3em;
   color: #000000;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.242);
+
 }
+
 .image-header p {
   font-family: var(--font-slogan);
   color: #000000;
@@ -232,6 +276,7 @@ a.btn-home-page img:hover{
   font-size: 2em;
   margin: 40px;
 }
+
 .image-header img {
   width: 100%;
   height: 80vh;
@@ -241,58 +286,87 @@ a.btn-home-page img:hover{
   position: absolute;
   z-index: -1;
 }
-@media (max-width: 960px){
+
+.bg-contact-header {
+  background-color: #000000;
+  height: 80vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-slogan);
+  font-size: clamp(2em, 2vw, 6em);
+}
+
+.ola-header-contact-me {
+  position: absolute;
+  right: 0;
+  bottom: 14;
+}
+
+@media (max-width: 960px) {
   .image-header {
     height: 50vh;
   }
+
   .image-header h1 {
     font-size: 1.8em;
   }
+
   .image-header p {
     font-size: 1.2em;
   }
+
   .image-header img {
     height: 50vh;
   }
 }
-/* -END MEDIA HEADER  */
-/* --------------- END HEADER ----------------  */
 
+/* FIN VIDEO  */
+/* ------------- FIN DU HEADER -------------- */
 
-/* --------------- START MAIN ----------------  */
-/* -START KOME PAGE- */ 
-main.home-page{
+/* ------------- DEBUT MAIN ------------ */
+main.home-page {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
 }
-.home-description{
+
+.home-description {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;margin-top: 10%;
+  align-items: center;
+  margin-top: 80px;
 }
-.home-description h1{
+
+.home-description h1 {
   font-family: var(--font-slogan);
   font-size: 2em;
 }
-.home-description h2{
+
+.home-description h2 {
   font-family: var(--font-text1);
   margin: 40px;
   font-size: 3em;
 }
-.home-description .kombucha-logo{
+
+.home-description .kombucha-logo {
   width: 350px;
   margin: 40px;
 }
-.home-description .kombucha-description{
+
+.home-description .kombucha-description {
   width: 100%;
   box-shadow: 5px 5px 5px var(--shadow);
-  transition: all 0.4s;
+  transition: all 0.7s;
 }
-.home-description .kombucha-description:hover{
+
+.home-description .kombucha-description:hover {
   transform: scale(1.2);
 }
+
 .top-content {
   width: 100%;
   display: flex;
@@ -300,6 +374,7 @@ main.home-page{
   justify-content: space-between;
   margin-top: 10%;
 }
+
 .bot-content {
   width: 100%;
   display: flex;
@@ -307,17 +382,49 @@ main.home-page{
   justify-content: space-around;
   margin: 10% 0;
 }
-.produits::before{
+
+.block-small {
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px var(--shadow);
+  cursor: pointer;
+}
+
+.block-small::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 1s ease;
+  z-index: -1;
+}
+
+.block-small:hover::before {
+  transform: scale(1.1);
+}
+
+.produits::before {
   background-image: url(/media/photo-home-produit.jpg);
   background-size: cover;
   background-position: center;
 }
-.histoire::before{
+
+.histoire::before {
   background-image: url(/media/photo-home-monhistoire.jpg);
   background-size: cover;
   background-position: center;
 }
-.titre-block{
+
+.titre-block {
   display: flex;
   color: var(--jaune);
   font-family: var(--font-text1);
@@ -328,72 +435,119 @@ main.home-page{
   text-shadow: 2px 1px rgb(0, 0, 0);
   max-width: 60%;
 }
-@media (max-width: 960px){
+
+.block-large {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-shadow: black;
+  color: var(--jaune);
+  font-family: var(--font-text1);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  box-shadow: 7px 5px 5px var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.block-large::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(media/photo-atelier1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+  z-index: -1;
+}
+
+.block-large:hover::before {
+  transform: scale(1.1);
+}
+
+@media (max-width: 960px) {
   .top-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .block-small {
     margin: 10% 0;
     width: 100%;
   }
-  main.produits-page{
+
+  main.produits-page {
     display: flex;
     flex-direction: column;
+  }
 }
-}
+
 /* ---- Fin de la home page ----*/
 
 
 /*---------- Debut de la page produits ------------*/
-main.produits-page{
-    display: flex;
-    flex-direction: row;
-    margin: 5% 10%; 
-    justify-content: center;
+main.produits-page {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 10%;
+  justify-content: center;
 }
-main.produits-page .block-small{
+
+main.produits-page .block-small {
   box-shadow: none;
 }
-.kombucha-card{
+
+.kombucha-card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.kombucha-card::before{
-  background-image: url(/media/Kombucha\ white.png);
+
+.kombucha-card::before {
+  background-image: url(/media/kombucha-white.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
-.kefir-card{
+
+.kefir-card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.kefir-card::before{
+
+.kefir-card::before {
   background-image: url(/media/kefir-white.png);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
-.produits-list-page{
+.produits-list-page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 10%;
 }
-.nav-product{
+
+.nav-product {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 40px 0;
 }
-.nav-product a{
+
+.nav-product a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,23 +559,28 @@ main.produits-page .block-small{
   color: black;
   transition: all 0.4s;
 }
-.nav-product a:hover{
+
+.nav-product a:hover {
   background-color: var(--vert);
   font-weight: bold;
 }
-.list-product{
+
+.list-product {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 83%;
 }
-.list-product{
+
+.list-product {
   margin: 20px;
 }
-.list-product .block-small{
+
+.list-product .block-small {
   margin: 20px;
 }
-.list-product p.text-card{
+
+.list-product p.text-card {
   font-family: var(--font-text1);
   font-size: 4em;
   font-weight: bold;
@@ -431,10 +590,11 @@ main.produits-page .block-small{
   justify-content: center;
   text-shadow: 1px 2px 1px black;
 }
+
 .detail-kombucha1,
 .detail-kombucha2,
 .detail-kombucha3,
-.detail-kombucha4{
+.detail-kombucha4 {
   display: none;
   flex-direction: row;
   justify-content: space-around;
@@ -445,37 +605,40 @@ main.produits-page .block-small{
   width: 70%;
   height: 90%;
   padding: 40px;
-  background-color: #ffffffe0;
+  background-color: #ffffffa4;
   backdrop-filter: blur(5px);
   object-fit: contain;
   border: 2px solid var(--bleu);
   transition: display 0.4s ease-in-out;
 }
+
 /* .detail-kombucha1{
   display: flex;
 } */
 .detail-kombucha1 img,
 .detail-kombucha2 img,
 .detail-kombucha3 img,
-.detail-kombucha4 img{
+.detail-kombucha4 img {
   object-fit: contain;
   object-position: center;
   height: 90%;
   max-width: 40%;
 }
+
 .content-detail1,
 .content-detail2,
 .content-detail3,
-.content-detail4{
+.content-detail4 {
   display: flex;
   flex-direction: column;
   max-width: 50%;
   text-align: left;
 }
+
 .content-detail1 .titre-produit,
 .content-detail2 .titre-produit,
 .content-detail3 .titre-produit,
-.content-detail4 .titre-produit{
+.content-detail4 .titre-produit {
   font-family: var(--font-text1);
   font-size: 1.7em;
   margin: 30px 0;
@@ -483,99 +646,117 @@ main.produits-page .block-small{
   flex-direction: row;
   align-items: center;
 }
+
 .content-detail1 .titre-produit img,
 .content-detail2 .titre-produit img,
 .content-detail3 .titre-produit img,
-.content-detail4 .titre-produit img{
+.content-detail4 .titre-produit img {
   width: 20%;
   margin-right: 20px;
 }
+
 .content-detail1 .text-detail-produit,
 .content-detail2 .text-detail-produit,
 .content-detail3 .text-detail-produit,
-.content-detail4 .text-detail-produit{
+.content-detail4 .text-detail-produit {
   font-family: var(--font-text2);
   font-size: clamp(1em, 2.3vw, 1.6em);
   padding: 0 50px;
-  
+
 }
+
 .kombucha1,
 .kombucha2,
 .kombucha3,
-.kombucha4{
+.kombucha4 {
   box-shadow: none;
 }
-.kombucha1::before{
+
+.kombucha1::before {
   background-image: url(/media/kombucha-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kombucha2::before{
+
+.kombucha2::before {
   background-image: url(/media/kombucha-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kombucha3::before{
+
+.kombucha3::before {
   background-image: url(/media/kombucha-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kombucha4::before{
+
+.kombucha4::before {
   background-image: url(/media/kombucha-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .kefir1,
 .kefir2,
 .kefir3,
-.kefir4{
+.kefir4 {
   box-shadow: none;
 }
-.kefir1::before{
+
+.kefir1::before {
   background-image: url(/media/kefir-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kefir2::before{
+
+.kefir2::before {
   background-image: url(/media/kefir-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kefir3::before{
+
+.kefir3::before {
   background-image: url(/media/kefir-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.kefir4::before{
+
+.kefir4::before {
   background-image: url(/media/kefir-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media (max-width: 960px){
+
+@media (max-width: 960px) {
   .top-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .block-small {
     margin: 10% 0;
     width: 100%;
   }
-  main.produits-page{
+
+  main.produits-page {
     display: flex;
     flex-direction: column;
   }
 }
+
 /*---------- Fin de la page produits ------------*/
+
+
 
 /* ----- Footer ----- */
 footer {
@@ -589,21 +770,26 @@ footer {
   padding: 3% 10%;
   font-family: var(--font-text2);
 }
-.block-footer{
+
+.block-footer {
   width: 18%;
   display: flex;
   flex-direction: column;
+
 }
-.block-footer h4{
+
+.block-footer h4 {
   font-size: 1.4em;
   margin: 20px 0;
 }
+
 .block-footer a,
 .block-footer p {
   font-size: 0.8em;
   color: #fff;
 }
-.fa-solid, 
-.fa-brands{
+
+.fa-solid,
+.fa-brands {
   margin-right: 10px;
 }
