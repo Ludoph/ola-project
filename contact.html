@@ -37,86 +37,74 @@
             <a href="aporpos.html">à PROPOS</a>
         </div>
         <div class="bg-contact-header">
-            <h1 class="titre-header">CONTACTEZ-MOI</h1>
+            <div class="titre-header">
+               <h1>Contactez-moi</h1>
+               <p>La magie du Kombucha artisanal : Une délicieuse boisson vivante à découvrir !</p> 
+            </div>
             <img class="ola-header-contact-me" src="/media/ola_photo_2-removebg-preview.png" alt="">
         </div>
     </header>
-    <!------------------------------- banniere et coord ---------------------------------------------------------------->
-    <div class="contact-banniere">
-        <div class="champinfo">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-            <ul>
-                <li> <i class="fa-solid fa-phone"></i>
-                    <p>00.00.00.00</p>
-                </li>
-                <li> <i class="fa-solid fa-phone"></i>
-                    <p>00.00.00.00</p>
-                </li>
-                <li> <i class="fa-solid fa-envelope"></i>
-                    <p>example@gmail.com</p>
-                </li>
-                <li> <i class="fa-solid fa-location-dot"></i></i>
-                    <p>Nullam vel nulla tincidunt 00000 Molestie</p>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-
-
-
-    <!------------------------------- contact-form ---------------------------------------------------------------->
-    <div class="formmap">
-        <div class="container">
-            <form action="">
-                <h3 class="tform">Contactez-moi</h3>
-
-                <label for="prenom">Votre Prenom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="">
-
-                <label for="nom">Votre Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="">
-
-                <label for="category">Vous-etes</label>
+    <main>
+       <section class="info-contact">
+        <div class="left">
+            <h1 class="titre-contact">Ecrivez moi</h1>
+            <form class="formulaire-contact" action="">
+                <label for="category">Vous êtes</label>
                 <select id="category" name="category">
-                    <option value="Particulair">Particulair</option>
-                    <option value="Professionnel">Professionnel</option>
-                    <option value="Traiteur">Traiteur</option>
+                    <option value="professionel">Professionnel</option>
+                    <option value="particulier">Particulier</option>
                 </select>
-                <label for="subject">Votre Message</label>
-                <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-
-                <input type="submit" value="Send">
-                <img src="media/Kambucha1-removebg-preview.png" alt="kambucha">
-
-
-
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="" autocomplete="off" required>
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" autocomplete="off" placeholder="" required>
+                <label for="sujet">Objet *</label>
+                <input type="text" required>
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="" style="height:200px" autocomplete="off" required></textarea>
+                <input class="btnValider" type="submit" value="Valider">
             </form>
         </div>
-        <!------------------------------- map ---------------------------------------------------------------->
-        <div class="map-rubrique">
-            <div class="map-google">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80985.03433954743!2d2.9644966297826105!3d50.63116043521414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1686038133845!5m2!1sfr!2sfr"
-                    width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-
-            <div class="text-route">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>Donec non sem euismod, suscipit mauris eget, mattis augue. Suspendisse sit amet dui orci. Sed lectus
-                    metus, tincidunt ut orci non, blandit sodales enim. Pellentesque dapibus quis metus a fermentum.
-                    Nullam dignissim eget mi consectetur feugiat. Praesent hendrerit diam est, ut sollicitudin quam
-                    tempor sed. In sodales leo nec sodales tempus. Ut sit amet ex ex. Donec fermentum bibendum quam id
-                    condimentum. Aenean dignissim accumsan massa, sed finibus orci porttitor vel. Sed a ligula diam. Nam
-                    ipsum risus, efficitur in ligula in, euismod ultrices sapien.</p>
-
-            </div>
+        <div class="right">
+            <h1 class="titre-contact">Prenons Contact</h1>
+            <h2>Par Mail</h2>
+            <a href="mailto:ola.zevounou@latelier-des-bulles.fr"><i
+                    class="fa-solid fa-envelope"></i>ola.zevounou@latelier-des-bulles.fr</a>
+            <h2>Par Téléphone</h2>
+            <p><i class="fa-solid fa-phone"></i>06 95 59 50 45</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d158.17192318813224!2d3.027275976618308!3d50.63174653597485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5679a5f63cd%3A0x9835eed2dc8973ca!2s173%20Rue%20des%20Bois%20Blancs%2C%2059000%20Lille!5e0!3m2!1sfr!2sfr!4v1686332760268!5m2!1sfr!2sfr"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </div>
-
+       </section>
+    </main>
+    <footer>
+        <div class="contact block-footer">
+            <h4>Contact</h4>
+            <p><i class="fa-solid fa-user"></i>Ola Sinelle ZEVOUNOU</p>
+            <a href="mailto:ola.zevounou@latelier-des-bulles.fr"><i
+                    class="fa-solid fa-envelope"></i>ola.zevounou@latelier-des-bulles.fr</a>
+            <p><i class="fa-solid fa-phone"></i>06 95 59 50 45</p>
+        </div>
+        <div class="social block-footer">
+            <h4>Réseaux</h4>
+            <a href=""><i class="fa-brands fa-square-facebook"> </i>Facebook</a>
+            <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        </div>
+        <div class="mention block-footer">
+            <h4>Mentions Légales</h4>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="partenariat block-footer">
+            <h4>Partenariat</h4>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
 </body>
 
 </html>
