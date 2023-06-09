@@ -205,6 +205,11 @@ header a.btn-home-page img:hover{
 
 /* **********************************************************************Service CSS ********************************************************************************************************************* */
 
+main{
+  width: 80%;
+  margin-left: 10%;
+}
+
 .image-header{
   display: flex;
   flex-direction: column;
@@ -260,7 +265,6 @@ header a.btn-home-page img:hover{
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
-  padding: 1%;
   display: flex;
   flex-direction: column;
 }
@@ -284,7 +288,18 @@ header a.btn-home-page img:hover{
 }
 
 .pro img{
+  position: relative;
+  overflow: hidden;
   width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px var(--shadow);
+  cursor: pointer;
+  
 }
 
 .traiteur{
@@ -293,7 +308,6 @@ header a.btn-home-page img:hover{
   margin-left: 2%;
   margin-bottom: 2%;
   margin-right: 2%;
-  padding: 1%;
   display: flex;
   flex-direction: column;
 }
@@ -308,7 +322,17 @@ header a.btn-home-page img:hover{
 }
 
 .traiteur img{
-  width: 100%;
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px var(--shadow);
+    cursor: pointer;
 }
 
 .atelier{
@@ -324,7 +348,7 @@ header a.btn-home-page img:hover{
 }
 
 .atelier p{
-  margin-left: 2%;
+ margin-left: 2%;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -333,9 +357,19 @@ header a.btn-home-page img:hover{
 }
 
 .atelier img{
-  width: 100%;
-  height: 50vh;
-  
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px var(--shadow);
+    cursor: pointer;
+    
 }
 
 .text-presentation{
@@ -374,7 +408,125 @@ header a.btn-home-page img:hover{
 
 /* ********************************************************************** Fin Service CSS ********************************************************************************************************************* */
 
+main.service-page{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.top-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.bot-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10% 0;
+}
+.block-small{
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px var(--shadow);
+  cursor: pointer;
+}
+.block-small::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 1s ease;
+  z-index: -1;
+}
+.block-small:hover::before{
+  transform: scale(1.1);
+}
+.pro::before{
+  background-image: url(/media/service_pro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.traiteur::before{
+  background-image: url(/media/traiteur\ sombre.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.titre-block-Service{
+  display: flex;
+  color: var(--jaune);
+  font-family: var(--font-text1);
+  text-transform: capitalize;
+  font-size: 3.5em;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  max-width: 60%;
+}*
 
+.block-large {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-shadow: black;
+  color: var(--jaune);
+  font-family: var(--font-text1);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  box-shadow: 7px 5px 5px var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.block-large::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(media/photo-atelier1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+  z-index: -1;
+}
+
+.block-large:hover::before{
+  transform: scale(1.1);
+}
+
+@media (max-width: 960px){
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-small {
+    margin: 10% 0;
+    width: 100%;
+  }
+  main.produits-page{
+    display: flex;
+    flex-direction: column;
+}
+}
 
 
 
