@@ -839,6 +839,42 @@ main.produits-page .block-small {
 }
 
 
+.block-apropos{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10% 0;
+  justify-content: space-between;
+}
+.quifermente{
+  background-image: url(/media/photo-atelier3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.monparcours{
+  background-image: url(/media/photo-ola.jpg);
+  background-size: cover;
+  
+}
+.remerciement{
+  background-image: url(/media/photoprofilola.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----- Footer ----- */
 footer {
   background-color: black;
