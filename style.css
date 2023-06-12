@@ -331,40 +331,75 @@ main {
   margin: 0 15%;
   justify-content: space-between;
 }
+.new-product{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10% 0;
+}
+.new-product-content {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+.new-product-content h1 {
+  font-family: var(--font-text2);
+  font-size: 4em;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--jaune);
+  text-shadow: 2px 1px rgb(0, 0, 0);
+  border-bottom: 2px solid var(--rouge);
+  text-align: center;
+}
+.new-product-content h2 {
+  font-family: var(--font-slogan);
+  color: var(--rouge);
+  font-size: 2.3em;
+  text-align: center;
+  margin: 40px 0;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+.new-product-content p{
+  font-family: var(--font-text2);
+  font-size: 1.2em;
+  line-height: 30px;
+}
+.new-product img {
+  display: flex;
+  width: 35%;
+  height: 80vh;
+  object-fit: contain;
+  
+}
 .home-description {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-bottom: 10%;
 }
 
 .home-description h1 {
   font-family: var(--font-slogan);
   font-size: 2em;
 }
-
 .home-description h2 {
   font-family: var(--font-text1);
   margin: 40px;
   font-size: 3em;
 }
-
 .home-description .kombucha-logo {
   width: 350px;
   margin: 40px;
 }
-
 .home-description .kombucha-description {
   width: 100%;
   box-shadow: 5px 5px 5px var(--shadow);
   transition: all 0.7s;
 }
-
-.home-description .kombucha-description:hover {
-  transform: scale(1.1);
-}
-
 .top-content {
   width: 100%;
   display: flex;
@@ -537,7 +572,8 @@ main.produits-page .block-small {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.produits-list-page {
+.produits-list-page,
+.service-list-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,7 +592,7 @@ main.produits-page .block-small {
   justify-content: center;
   text-align: center;
   font-family: var(--font-text1);
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   padding: 10px 20px;
   color: black;
@@ -660,35 +696,29 @@ main.produits-page .block-small {
   font-size: clamp(1em, 2.3vw, 1.6em);
   padding: 0 50px;
 }
-.kombucha1,
-.kombucha2,
-.kombucha3,
-.kombucha4 {
-  box-shadow: none;
-}
 .kombucha1::before {
   background-image: url(/media/kombucha-blue.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .kombucha2::before {
   background-image: url(/media/kombucha-green.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .kombucha3::before {
   background-image: url(/media/kombucha-red.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .kombucha4::before {
   background-image: url(/media/kombucha-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .pro::before {
   background-image: url(/media/service-pro.jpg);
@@ -696,43 +726,36 @@ main.produits-page .block-small {
   background-position: center;
 }
 .traiteur::before {
-  background-image: url(/media/service-traiteur.jpg);
+  background-image: url(/media/photo-service-traiteur.jpg);
   background-size: cover;
   background-position: center;
 }
-.kefir1,
-.kefir2,
-.kefir3,
-.kefir4 {
-  box-shadow: none;
-}
-
 .kefir1::before {
   background-image: url(/media/kefir-blue.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .kefir2::before {
   background-image: url(/media/kefir-green.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .kefir3::before {
   background-image: url(/media/kefir-red.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .kefir4::before {
   background-image: url(/media/kefir-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media (max-width: 960px) {
@@ -773,9 +796,10 @@ main.produits-page .block-small {
 }
 .info-contact .titre-contact{
   text-transform: uppercase;
-  font-family: var(--font-text1);
+  font-family: var(--font-text2);
   font-size: 3em;
   margin: 20px 0;
+  border-bottom: 2px solid var(--bleu);
 }
 .info-contact .left .formulaire-contact{
   display: flex;
@@ -798,8 +822,16 @@ main.produits-page .block-small {
 }
 .btnValider {
   margin: 40px 0;
-  background-color: var(--bleu);
+  background-color: var(--vert);
   border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btnValider:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
 .info-contact .right iframe{
   height: 50vh;
@@ -807,7 +839,7 @@ main.produits-page .block-small {
   margin: 60px 0;
 }
 .info-contact h2{
-  font-family: var(--font-text2);
+  font-family: var(--font-text1);
   font-size: 2em;
   margin: 20px 0;
 }
@@ -823,7 +855,7 @@ main.produits-page .block-small {
 }
 .info-contact p{
   font-family: var(--font-text2);
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 @media (max-width: 960px){
   .info-contact{
@@ -860,7 +892,17 @@ main.produits-page .block-small {
   background-image: url(/media/photoprofilola.jpg);
   background-size: cover;
 }
-
+.content-apropos{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: var(--font-text1);
+  font-size: 1.7em;
+}
+.content-apropos h1{
+  text-align: center;
+  margin: 40px;
+}
 
 
 
@@ -909,4 +951,27 @@ footer {
 .fa-solid,
 .fa-brands {
   margin-right: 10px;
+}
+@media (max-width: 960px){
+  footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .block-footer {
+    width: 100%;
+  }
+  .block-footer h4{
+    font-size: 4em;
+    text-align: center;
+  }
+  .block-footer a,
+  .block-footer p {
+  font-size: 2em;
+  color: #fff;
+  margin: 10px 0;
+  }
+  .fa-solid,
+  .fa-brands {
+    margin-right: 30px;
+  }
 }
