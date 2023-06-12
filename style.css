@@ -205,7 +205,7 @@ a.btn-home-page img:hover {
     content: ".titre-video";
   }
   50% {
-    content: url(/media/logo-atelierbulle1.png);
+    content: url(./media/logo-atelierbulle1.png);
     width: 20%;
   }
 }
@@ -290,7 +290,7 @@ a.btn-home-page img:hover {
 }
 .bg-contact-header {
   background-color: #000000;
-  background-image: url(/media/photo-contact-header.jpg);
+  background-image: url(./media/photo-contact-header.jpg);
   background-position: center;
   height: 80vh;
   width: 100%;
@@ -468,13 +468,13 @@ main {
 }
 
 .produits::before {
-  background-image: url(/media/photo-home-produit.jpg);
+  background-image: url(./media/photo-home-produit.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .histoire::before {
-  background-image: url(/media/photo-home-monhistoire.jpg);
+  background-image: url(./media/photo-home-monhistoire.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -515,7 +515,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(media/photo-service-header.jpg);
+  background-image: url(./media/photo-service-header.jpg);
   background-size: cover;
   background-position: center;
   transition: transform 1s ease;
@@ -529,7 +529,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(media/photo-atelier1.jpg);
+  background-image: url(./media/photo-atelier1.jpg);
   background-size: cover;
   background-position: center;
   transition: transform 1s ease;
@@ -561,7 +561,7 @@ main.produits-page .block-small {
   align-items: center;
 }
 .kombucha-card::before {
-  background-image: url(/media/kombucha-white.png);
+  background-image: url(./media/kombucha-white.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -572,7 +572,7 @@ main.produits-page .block-small {
   align-items: center;
 }
 .kefir-card::before {
-  background-image: url(/media/kefir-white.png);
+  background-image: url(./media/kefir-white.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -707,62 +707,62 @@ main.produits-page .block-small {
   opacity: 0.6;
 }
 .kombucha1::before {
-  background-image: url(/media/kombucha-blue.png);
+  background-image: url(./media/kombucha-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .kombucha2::before {
-  background-image: url(/media/kombucha-green.png);
+  background-image: url(./media/kombucha-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .kombucha3::before {
-  background-image: url(/media/kombucha-red.png);
+  background-image: url(./media/kombucha-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .kombucha4::before {
-  background-image: url(/media/kombucha-yellow.png);
+  background-image: url(./media/kombucha-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .pro::before {
-  background-image: url(/media/service-pro.jpg);
+  background-image: url(./media/service-pro.jpg);
   background-size: cover;
   background-position: center;
 }
 .traiteur::before {
-  background-image: url(/media/photo-service-traiteur.jpg);
+  background-image: url(./media/photo-service-traiteur.jpg);
   background-size: cover;
   background-position: center;
 }
 .kefir1::before {
-  background-image: url(/media/kefir-blue.png);
+  background-image: url(./media/kefir-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .kefir2::before {
-  background-image: url(/media/kefir-green.png);
+  background-image: url(./media/kefir-green.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .kefir3::before {
-  background-image: url(/media/kefir-red.png);
+  background-image: url(./media/kefir-red.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .kefir4::before {
-  background-image: url(/media/kefir-yellow.png);
+  background-image: url(./media/kefir-yellow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -861,17 +861,17 @@ main.produits-page .block-small {
   justify-content: space-between;
 }
 .quifermente{
-  background-image: url(/media/photo-atelier3.jpg);
+  background-image: url(./media/photo-atelier3.jpg);
   background-position: center;
   background-size: cover;
 }
 .monparcours{
-  background-image: url(/media/photo-ola.jpg);
+  background-image: url(./media/photo-ola.jpg);
   background-size: cover;
   
 }
 .remerciement{
-  background-image: url(/media/photoprofilola.jpg);
+  background-image: url(./media/photoprofilola.jpg);
   background-size: cover;
 }
 .content-apropos{
