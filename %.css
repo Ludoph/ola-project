@@ -83,7 +83,7 @@
   display: block;
   width: 70%;
   height: 4px;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(255, 255, 255);
   transition: transform 0.4s ease-out, opacity 0.1s ease-out;
 }
 
@@ -139,6 +139,7 @@
 }
 button.nav-toggler {
   display: none;
+  border: 4px solid black;
   transition: all 0.4s;
 }
 
@@ -362,7 +363,7 @@ main {
 .new-product-content {
   display: flex;
   flex-direction: column;
-  /* width: 55%; */
+  width: 55%;
 }
 .new-product-content h1 {
   font-family: var(--font-text2);
@@ -393,7 +394,6 @@ main {
   width: 35%;
   height: 80vh;
   object-fit: contain;
-  margin: 0 5%;
   
 }
 .home-description {
@@ -651,6 +651,9 @@ main.produits-page .block-small {
   backdrop-filter: blur(5px);
   border: 2px solid var(--bleu);
 }
+/* .detail-pro{
+  display: flex;
+} */
 .detail-kombucha1 img,
 .detail-kombucha2 img,
 .detail-kombucha3 img,
@@ -663,6 +666,15 @@ main.produits-page .block-small {
   height: 90%;
   max-width: 40%;
   box-shadow: 5px 5px 5px var(--shadow);
+}
+.content-detail1,
+.content-detail2,
+.content-detail3,
+.content-detail4 {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  text-align: left;
 }
 .content-detail1 .titre-produit,
 .content-detail2 .titre-produit,
@@ -682,6 +694,7 @@ main.produits-page .block-small {
 .content-detail4 .titre-produit img {
   width: 20%;
   margin-right: 20px;
+  
 }
 .content-detail1 .text-detail-produit,
 .content-detail2 .text-detail-produit,
@@ -698,13 +711,11 @@ main.produits-page .block-small {
   background-color: var(--vert);
   font-family: var(--font-text2);
   text-transform: uppercase;
-  font-weight: bold;
   color: #000000;
   transition: all 0.5s;
 }
 .content-detail1 .contactme:hover{
   transform: scale(1.2);
-  opacity: 0.6;
 }
 .kombucha1::before {
   background-image: url(/media/kombucha-blue.png);
@@ -768,7 +779,24 @@ main.produits-page .block-small {
   background-size: cover;
 }
 
+@media (max-width: 960px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .block-small {
+    margin: 10% 0;
+    width: 100%;
+  }
+
+  main.produits-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*---------- Fin de la page produits ------------*/
 .info-contact{
@@ -850,7 +878,18 @@ main.produits-page .block-small {
   font-family: var(--font-text2);
   font-size: 1.5em;
 }
-
+@media (max-width: 960px){
+  .info-contact{
+    flex-direction: column;
+  }
+  .info-contact .left,
+  .info-contact .right{
+    width: 100%;
+  }
+  .ola-header-contact-me{
+    display: none;
+  }
+}
 
 
 .block-apropos{
@@ -888,157 +927,44 @@ main.produits-page .block-small {
 }
 
 @media (max-width: 960px) {
-  main {
-    margin: 0 10%;
-    justify-content: center;
-  }
-  .new-product{
-    flex-direction: column;
-    justify-content: center;
-  }
-  .new-product-content h1 {
-      font-size: 3em;
-  }
-  .new-product-content h2 {
-      font-size: 3em;
-  }
-  .new-product-content p{
-      font-size: 1em;
-  }
-  .new-product img{
+    main {
+      margin: 0 10%;
+      justify-content: center;
+    }
+    .new-product{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .new-product-content h1 {
+        font-size: 3em;
+    }
+    .new-product-content h2 {
+        font-size: 3em;
+    }
+    .new-product-content p{
+        font-size: 3em;
+    }
+    .new-product img{
+        width: 100%;
+        height: none;
+    }
+    .top-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .block-small {
+      margin: 10% 0;
       width: 100%;
-      object-fit: cover;
-      margin-top: 10%;
+    }
+  
+    main.produits-page {
+      display: flex;
+      flex-direction: column;
+    }
   }
-  .top-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .block-small {
-    margin: 10% 0;
-    width: 100%;
-  }
-
-  main.produits-page {
-    display: flex;
-    flex-direction: column;
-  }
-  .top-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .block-small {
-    margin: 10% 0;
-    width: 100%;
-  }
-
-  main.produits-page {
-    display: flex;
-    flex-direction: column;
-  }
-  .detail-kombucha1,
-  .detail-kombucha2,
-  .detail-kombucha3,
-  .detail-kombucha4,
-  .detail-pro,
-  .detail-traiteur,
-  .detail-ateliers {
-    flex-direction: column-reverse;
-  }
-  .detail-kombucha1 img,
-  .detail-kombucha2 img,
-  .detail-kombucha3 img,
-  .detail-kombucha4 img,
-  .detail-pro img,
-  .detail-traiteur img,
-  .detail-ateliers img {
-    object-fit: cover;
-    object-position: center;
-    height: 50%;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-  .content-detail1,
-  .content-detail2,
-  .content-detail3,
-  .content-detail4 {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    text-align: left;
-  }
-  .content-detail1 .titre-produit,
-  .content-detail2 .titre-produit,
-  .content-detail3 .titre-produit,
-  .content-detail4 .titre-produit {
-    font-size: 1.3em;
-    text-align: center;
-    margin: 10px 0;
-    flex-direction: column;
-  }
-  .content-detail1 .titre-produit img,
-  .content-detail2 .titre-produit img,
-  .content-detail3 .titre-produit img,
-  .content-detail4 .titre-produit img {
-    width: 15%;
-  }
-  .content-detail1 .text-detail-produit,
-  .content-detail2 .text-detail-produit,
-  .content-detail3 .text-detail-produit,
-  .content-detail4 .text-detail-produit {
-    font-family: var(--font-text2);
-    font-size: clamp(1.2em, 2.3vw, 1.6em);
-    padding: 10px 10px;
-  }
-  .content-detail1 .contactme{
-    text-align: center;
-    margin: 40px 80px;
-    padding: 20px 0;
-    background-color: var(--vert);
-    font-family: var(--font-text2);
-    text-transform: uppercase;
-    color: #000000;
-    transition: all 0.5s1
-  }
-  .info-contact{
-    flex-direction: column;
-  }
-  .info-contact .left,
-  .info-contact .right{
-    width: 100%;
-  }
-  .info-contact .left .formulaire-contact select,
-  .info-contact .left .formulaire-contact input,
-  .info-contact .left .formulaire-contact textarea {
-    font-size: 1.2em;
-    padding: 10px;
-  }
-  .info-contact h2{
-    font-family: var(--font-text1);
-    font-size: 1.5em;
-  }
-  .info-contact a{
-    font-size: 1.2em;
-  }
-  .ola-header-contact-me{
-    display: none;
-  }
-  .block-apropos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .content-apropos{
-    width: 100%;
-  }
-}
 
 
 
@@ -1095,11 +1021,12 @@ footer {
     width: 100%;
   }
   .block-footer h4{
-    font-size: 3em;
+    font-size: 4em;
+    text-align: center;
   }
   .block-footer a,
   .block-footer p {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
   margin: 10px 0;
   }
