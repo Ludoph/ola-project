@@ -113,18 +113,18 @@ if (btnAteliers != undefined){
     });
 }
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getFirestore  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+// import { getFirestore  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDpyV-WgfmuG-TvBwKbDRP-tT9BvAS3Fw4",
-    authDomain: "olabelbul-8bf6d.firebaseapp.com",
-    projectId: "olabelbul-8bf6d",
-    storageBucket: "olabelbul-8bf6d.appspot.com",
-    messagingSenderId: "83175455639",
-    appId: "1:83175455639:web:88d72d01bdefe01826a2d2"
-};
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDpyV-WgfmuG-TvBwKbDRP-tT9BvAS3Fw4",
+//     authDomain: "olabelbul-8bf6d.firebaseapp.com",
+//     projectId: "olabelbul-8bf6d",
+//     storageBucket: "olabelbul-8bf6d.appspot.com",
+//     messagingSenderId: "83175455639",
+//     appId: "1:83175455639:web:88d72d01bdefe01826a2d2"
+// };
 
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
+// const db = getFirestore(app);
