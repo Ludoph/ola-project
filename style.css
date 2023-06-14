@@ -876,8 +876,6 @@ main.produits-page .block-small {
   font-size: 1.5em;
 }
 
-
-
 .block-apropos{
   display: flex;
   flex-direction: row;
@@ -1088,18 +1086,6 @@ main.produits-page .block-small {
     border-bottom: 2px solid var(--bleu);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----- Footer ----- */
 footer {
   background-color: black;

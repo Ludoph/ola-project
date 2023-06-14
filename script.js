@@ -113,6 +113,28 @@ if (btnAteliers != undefined){
     });
 }
 
+document.getElementById('formulaire-contact').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let nom = document.getElementById('nom').value;
+    let prenom = document.getElementById('prenom').value;
+    let status = document.getElementById('category').value;
+    let subject = document.getElementById('sujet').value;
+    let message = document.getElementById('message').value;
+    let mail = document.getElementById('mail').value;
+    
+    var emailContent = "Je suis un " + status + "\n" + "\n";
+    emailContent += nom + prenom + "\n" + "\n";
+    emailContent += subject + "\n";
+    emailContent += message + "\n" + "\n";
+    emailContent += mail;
+
+    let mailtoLink = "mailto:ola.zevounou@latelier-des-bulles.fr" + "?subject=" + encodeURIComponent("Nouveau message de contact") + "&body=" + encodeURIComponent(emailContent);
+
+    window.location.href = mailtoLink;
+
+});
+
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 // import { getFirestore  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 

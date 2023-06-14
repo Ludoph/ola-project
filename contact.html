@@ -48,7 +48,7 @@
        <section class="info-contact" id="info-contact">
         <div class="left">
             <h1 class="titre-contact">Ecrivez moi</h1>
-            <form class="formulaire-contact" action="">
+            <form class="formulaire-contact" id="formulaire-contact" action="">
                 <label for="category">Vous êtes</label>
                 <select id="category" name="category">
                     <option value="professionel">Professionnel</option>
@@ -58,8 +58,10 @@
                 <input type="text" id="nom" name="nom" placeholder="" autocomplete="off" required>
                 <label for="prenom">Prénom *</label>
                 <input type="text" id="prenom" name="prenom" autocomplete="off" placeholder="" required>
+                <label for="mail">Email *</label>
+                <input type="email" id="mail" name="mail" placeholder="" autocomplete="off" required>
                 <label for="sujet">Objet *</label>
-                <input type="text" required>
+                <input type="text" id="sujet">
                 <label for="message">Message *</label>
                 <textarea id="message" name="message" placeholder="" style="height:200px" autocomplete="off" required></textarea>
                 <input class="btnValider" type="submit" value="Valider">
